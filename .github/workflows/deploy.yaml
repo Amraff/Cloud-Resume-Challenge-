@@ -19,7 +19,7 @@ jobs:
 
     defaults:
       run:
-        working-di rectory: ./terraform
+        working-directory: ./terraform
 
     steps:
       - name: checkout Repo
