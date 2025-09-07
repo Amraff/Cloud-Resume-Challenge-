@@ -4,3 +4,7 @@ bucket_name = "terraform-state-raff010925"
 table_name = "terraform_state_locks"
 root_domain = "rafftec.click"
 dns_record_ttl = 300
+website_bucket = "rafftec.cloud"
+force_destroy = false
+index_document = "index.html"
+versioning_enabled = "Enabled"
