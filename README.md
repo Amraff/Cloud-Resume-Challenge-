@@ -81,6 +81,32 @@ The portfolio website follows a modern serverless architecture pattern with:
 - **SSL**: AWS Certificate Manager for HTTPS
 - **CI/CD**: GitHub Actions for automated deployment
 
+## 🛠️ Troubleshooting
+
+### Route 53 Multiple Hosted Zones Error
+If you encounter "multiple Route 53 Hosted Zones matched" error:
+
+```hcl
+# In modules/route53_acm/main.tf, add zone_id constraint:
+data "aws_route53_zone" "dns_zone" {
+  name         = var.domain_name
+  private_zone = false
+  # Add this line with your specific zone ID:
+  zone_id      = "Z1234567890ABC"  # Replace with actual zone ID
+}
+```
+
+Or use tags to identify the correct zone:
+```hcl
+data "aws_route53_zone" "dns_zone" {
+  name         = var.domain_name
+  private_zone = false
+  tags = {
+    Environment = "production"
+  }
+}
+```
+
 ## 🚀 Getting Started
 
 1. **Clone the repository**
