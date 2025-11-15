@@ -4,46 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'website/**'
 
 jobs: 
-  terraform:
-    name: Deploy Infrastructure
-    runs-on: ubuntu-latest
-
-
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-    defaults:
-      run:
-        working-directory: ./terraform
-
-    steps:
-      - name: checkout Repo
-        uses: actions/checkout@v4
-
-      - name: Terraform Setup
-        uses: hashicorp/setup-terraform@v2
-        
-      - name: Terraform Format
-        run: terraform fmt
-
-      - name: Terraform Init
-        run: terraform init 
-
-      - name: Terraform Validate
-        run: terraform validate
-
-      - name: Terraform Plan
-        run: terraform plan
-
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
-
   Sync_S3:
     name: Sync files to S3 Bucket
-    needs: Terraform
     runs-on: ubuntu-latest
 
     steps:
