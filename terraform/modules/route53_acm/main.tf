@@ -1,9 +1,7 @@
 data "aws_route53_zone" "dns_zone" {
   name         = var.root_domain
   private_zone = false
-  tags = {
-    Environment = "production"
-  }
+  most_recent  = true
 }
 
 resource "aws_acm_certificate" "ssl_certificate" {
