@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Raphew Karim Issah - Cloud/DevOps Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -15,7 +18,9 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -31,43 +36,46 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Raphew Karim profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Raphew Karim Issah</h1>
-        <p class="section__text__p2">Cloud/DevOPs Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/raphew-karim//'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Amraff'"
-          />
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-title">Raphew Karim Issah</h1>
+            <p class="hero-subtitle">Cloud/DevOps Engineer</p>
+            <p class="hero-description">Passionate about building scalable, automated, and secure cloud infrastructures that drive innovation and efficiency.</p>
+            <div class="btn-container">
+              <button class="btn btn-primary" onclick="location.href='./#about'">
+                About Me
+              </button>
+              <button class="btn btn-secondary" onclick="location.href='./#blog'">
+                Blog
+              </button>
+              <button class="btn btn-secondary" onclick="location.href='./#contact'">
+                Contact
+              </button>
+            </div>
+            <div class="socials-container">
+              <a href="https://www.linkedin.com/in/raphew-karim//" class="social-link" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" />
+              </a>
+              <a href="https://github.com/Amraff" class="social-link" target="_blank">
+                <img src="./assets/github.png" alt="GitHub" class="social-icon" />
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="./assets/profile-pic.jpg" alt="Raphew Karim profile picture" class="profile-img" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -106,13 +114,12 @@
           <div class="text-container">
             <p>
               With over three years of experience, I specialize in building scalable, automated, and secure infrastructures that streamline software development and deployment.
-
-              Designed CI/CD pipelines using Jenkins, Kubernetes and GitHub Actions, cutting deployment times by 40%. Leveraging Terraform and CloudFormation, provisioning cloud infrastructures across AWS ensuring scalability and cost-efficiency.
-
-              Using Docker and Kubernetes to deployed high-availability applications, while monitoring systems like ELK Stack and Grafana have kept services reliable. Security is central to my work, with tools like Github secretes integrated to protect and enforce compliance.
-
-              I am passionate about automation and delivering efficient, secure solutions that power innovation.
-              
+            </p>
+            <p>
+              I've designed CI/CD pipelines using Jenkins, Kubernetes and GitHub Actions, cutting deployment times by 40%. Leveraging Terraform and CloudFormation, I provision cloud infrastructures across AWS ensuring scalability and cost-efficiency.
+            </p>
+            <p>
+              Using Docker and Kubernetes, I deploy high-availability applications, while monitoring systems like ELK Stack and Grafana keep services reliable. Security is central to my work, with tools like GitHub Secrets integrated to protect and enforce compliance.
             </p>
           </div>
         </div>
@@ -255,94 +262,269 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#certifications'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">PROJECTS</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+    
+    <section id="certifications">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Certifications & Badges</h1>
+      <div class="certifications-container">
+        <div class="cert-category">
+          <h2 class="cert-category-title">AWS Certifications</h2>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">AWS Solutions Architect</h3>
+              <p class="cert-level">Associate</p>
+              <p class="cert-date">Valid until: Dec 2025</p>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Amraff/Cloud-Resume-Challenge-'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">AWS DevOps Engineer</h3>
+              <p class="cert-level">Professional</p>
+              <p class="cert-date">Valid until: Jan 2026</p>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">AWS SysOps Administrator</h3>
+              <p class="cert-level">Associate</p>
+              <p class="cert-date">Valid until: Mar 2025</p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+        </div>
+        
+        <div class="cert-category">
+          <h2 class="cert-category-title">DevOps & Cloud Certifications</h2>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="Kubernetes" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">Certified Kubernetes Administrator</h3>
+              <p class="cert-level">CKA</p>
+              <p class="cert-date">Valid until: Aug 2025</p>
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="Docker" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">Docker Certified Associate</h3>
+              <p class="cert-level">DCA</p>
+              <p class="cert-date">Valid until: Nov 2024</p>
+            </div>
+            <div class="cert-card">
+              <div class="cert-badge">
+                <img src="./assets/checkmark.png" alt="Terraform" class="cert-icon" />
+              </div>
+              <h3 class="cert-name">HashiCorp Terraform Associate</h3>
+              <p class="cert-level">003</p>
+              <p class="cert-date">Valid until: Sep 2025</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cert-category">
+          <h2 class="cert-category-title">Digital Badges</h2>
+          <div class="badges-grid">
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">AWS Cloud Quest: Cloud Practitioner</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">GitHub Actions Certification</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">Jenkins Certified Engineer</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">Ansible Automation Platform</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">SonarQube Quality Gate</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">
+                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
+              </div>
+              <span class="badge-name">Prometheus Monitoring</span>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="./assets/project-1.png" alt="Digi-Voice Architecture" class="project-img" />
+          <h3 class="project-title">Digi-Voice</h3>
+          <p class="project-description">AI-powered voice recognition and processing system with AWS serverless architecture</p>
+          <div class="project-tech">
+            <span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">DynamoDB</span>
+            <span class="tech-tag">S3</span>
+            <span class="tech-tag">Polly</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Digi-Voice'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Digi-Voice#architecture'">
+              Architecture
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-2.png" alt="Reddit Clone Deployment" class="project-img" />
+          <h3 class="project-title">Reddit Clone Deployment</h3>
+          <p class="project-description">Complete DevOps deployment of Reddit clone with CI/CD pipeline and monitoring</p>
+          <div class="project-tech">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Reddit-clone-deployment'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Reddit-clone-deployment#architecture'">
+              Architecture
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-3.png" alt="Cloud Resume Challenge" class="project-img" />
+          <h3 class="project-title">Cloud Resume Challenge</h3>
+          <p class="project-description">Full-stack serverless resume website built with AWS services and CI/CD</p>
+          <div class="project-tech">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Lambda</span>
+            <span class="tech-tag">DynamoDB</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Cloud-Resume-Challenge-'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='https://github.com/Amraff/Cloud-Resume-Challenge-#architecture'">
+              Architecture
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-1.png" alt="Monitoring Stack" class="project-img" />
+          <h3 class="project-title">Monitoring Stack</h3>
+          <p class="project-description">Complete monitoring solution with ELK Stack and Grafana</p>
+          <div class="project-tech">
+            <span class="tech-tag">ELK</span>
+            <span class="tech-tag">Grafana</span>
+            <span class="tech-tag">Prometheus</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='#'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='#'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-2.png" alt="Microservices" class="project-img" />
+          <h3 class="project-title">Microservices Architecture</h3>
+          <p class="project-description">Containerized microservices with service mesh</p>
+          <div class="project-tech">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Istio</span>
+            <span class="tech-tag">K8s</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='#'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='#'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-3.png" alt="Security Automation" class="project-img" />
+          <h3 class="project-title">Security Automation</h3>
+          <p class="project-description">Automated security scanning and compliance tools</p>
+          <div class="project-tech">
+            <span class="tech-tag">SonarQube</span>
+            <span class="tech-tag">OWASP</span>
+            <span class="tech-tag">GitHub Actions</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn project-btn" onclick="location.href='#'">
+              GitHub
+            </button>
+            <button class="btn project-btn" onclick="location.href='#'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="blog">
+      <p class="section__text__p1">Read My</p>
+      <h1 class="title">Blog Posts</h1>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3 class="blog-title">Getting Started with AWS DevOps</h3>
+          <p class="blog-date">December 2023</p>
+          <p class="blog-excerpt">A comprehensive guide to setting up your first DevOps pipeline on AWS using modern tools and best practices.</p>
+          <button class="btn blog-btn" onclick="location.href='#'">
+            Read More
+          </button>
+        </div>
+        
+        <div class="blog-card">
+          <h3 class="blog-title">Kubernetes Security Best Practices</h3>
+          <p class="blog-date">November 2023</p>
+          <p class="blog-excerpt">Essential security measures every DevOps engineer should implement when working with Kubernetes clusters.</p>
+          <button class="btn blog-btn" onclick="location.href='#'">
+            Read More
+          </button>
+        </div>
+        
+        <div class="blog-card">
+          <h3 class="blog-title">Infrastructure as Code with Terraform</h3>
+          <p class="blog-date">October 2023</p>
+          <p class="blog-excerpt">Learn how to manage your cloud infrastructure efficiently using Terraform modules and best practices.</p>
+          <button class="btn blog-btn" onclick="location.href='#'">
+            Read More
+          </button>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -373,6 +555,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
