@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raphew Karim Issah - Cloud/DevOps Engineer</title>
+    <title>Raphew Karim Issah - DevOps | SRE | Cloud Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Decorative Triangular Shapes -->
+    <div class="triangle triangle-1"></div>
+    <div class="triangle triangle-2"></div>
+    <div class="triangle triangle-3"></div>
+    <div class="triangle triangle-4"></div>
+    <div class="triangle triangle-5"></div>
+    <div class="triangle triangle-6"></div>
     <nav id="desktop-nav">
       <div class="logo">Raphew Karim Issah</div>
       <div>
@@ -21,7 +28,6 @@
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -39,30 +45,19 @@
           <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="hero-container">
         <div class="hero-content">
-          <div class="hero-text">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-title">Raphew Karim Issah</h1>
-            <p class="hero-subtitle">Cloud/DevOps Engineer</p>
-            <p class="hero-description">Passionate about building scalable, automated, and secure cloud infrastructures that drive innovation and efficiency.</p>
-            <div class="btn-container">
-              <button class="btn btn-primary" onclick="location.href='./#about'">
-                About Me
-              </button>
-              <button class="btn btn-secondary" onclick="location.href='./#blog'">
-                Blog
-              </button>
-              <button class="btn btn-secondary" onclick="location.href='./#contact'">
-                Contact
-              </button>
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="./assets/profile-pic.jpg" alt="Raphew Karim profile picture" class="profile-img" />
             </div>
-            <div class="socials-container">
+            <h1 class="profile-name">Raphew Karim Issah</h1>
+            <p class="profile-title">DevOps | SRE | Cloud Engineer</p>
+            <div class="profile-socials">
               <a href="https://www.linkedin.com/in/raphew-karim//" class="social-link" target="_blank">
                 <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" />
               </a>
@@ -71,9 +66,14 @@
               </a>
             </div>
           </div>
-          <div class="hero-image">
-            <div class="image-container">
-              <img src="./assets/profile-pic.jpg" alt="Raphew Karim profile picture" class="profile-img" />
+          <div class="profile-actions">
+            <div class="contact-info">
+              <p class="email">raphewkarim@gmail.com</p>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">
+                Download CV
+              </button>
             </div>
           </div>
         </div>
@@ -83,13 +83,6 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -99,7 +92,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>3+ years <br />Cloud/DevOps Engineer</p>
+              <p>4+ years <br />DevOps | SRE | Cloud Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -107,19 +100,22 @@
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>Diploma in Basic Education<br /></p>
+              <h3>Certifications</h3>
+              <p>AWS Certified<br />Solutions Architect & DevOps</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              With over three years of experience, I specialize in building scalable, automated, and secure infrastructures that streamline software development and deployment.
+              I am a results-driven DevOps/SRE/Cloud Engineer with 4+ years of hands-on experience designing, implementing, and managing cloud-native infrastructures. My expertise spans across AWS cloud services, containerization technologies, and automation frameworks that enable organizations to achieve faster time-to-market and improved operational efficiency.
             </p>
             <p>
-              I've designed CI/CD pipelines using Jenkins, Kubernetes and GitHub Actions, cutting deployment times by 40%. Leveraging Terraform and CloudFormation, I provision cloud infrastructures across AWS ensuring scalability and cost-efficiency.
+              My technical proficiency includes architecting CI/CD pipelines that have reduced deployment cycles by 40%, implementing Infrastructure as Code (IaC) using Terraform and CloudFormation, and orchestrating containerized applications with Docker and Kubernetes. I have successfully managed multi-environment deployments while maintaining 99.9% uptime through robust monitoring and alerting systems.
             </p>
             <p>
-              Using Docker and Kubernetes, I deploy high-availability applications, while monitoring systems like ELK Stack and Grafana keep services reliable. Security is central to my work, with tools like GitHub Secrets integrated to protect and enforce compliance.
+              As an AWS-certified professional, I bring deep knowledge of cloud architecture patterns, security best practices, and cost optimization strategies. My approach combines technical excellence with business acumen, ensuring that infrastructure solutions align with organizational goals while maintaining the highest standards of security and compliance.
+            </p>
+            <p>
+              Looking ahead, I am actively expanding my expertise into AI and Machine Learning operations (MLOps), focusing on integrating intelligent automation and predictive analytics into DevOps workflows. This includes exploring AWS AI/ML services, automated infrastructure optimization, and intelligent monitoring systems that will define the next generation of cloud operations.
             </p>
           </div>
         </div>
@@ -273,104 +269,21 @@
         <div class="cert-category">
           <h2 class="cert-category-title">AWS Certifications</h2>
           <div class="cert-grid">
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">AWS Solutions Architect</h3>
-              <p class="cert-level">Associate</p>
-              <p class="cert-date">Valid until: Dec 2025</p>
+            <div class="cert-card credly-badge">
+              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b9d43b6-4e39-4622-ba4a-0cac2473416e" data-share-badge-host="https://www.credly.com"></div>
+              <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">AWS DevOps Engineer</h3>
-              <p class="cert-level">Professional</p>
-              <p class="cert-date">Valid until: Jan 2026</p>
+            <div class="cert-card credly-badge">
+              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d734903-76ad-415d-b286-f2c0995992e4" data-share-badge-host="https://www.credly.com"></div>
+              <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="AWS" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">AWS SysOps Administrator</h3>
-              <p class="cert-level">Associate</p>
-              <p class="cert-date">Valid until: Mar 2025</p>
+            <div class="cert-card credly-badge">
+              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="462e55fb-33c5-4d19-9cd6-c67889081e6a" data-share-badge-host="https://www.credly.com"></div>
+              <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
           </div>
         </div>
-        
-        <div class="cert-category">
-          <h2 class="cert-category-title">DevOps & Cloud Certifications</h2>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="Kubernetes" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">Certified Kubernetes Administrator</h3>
-              <p class="cert-level">CKA</p>
-              <p class="cert-date">Valid until: Aug 2025</p>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="Docker" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">Docker Certified Associate</h3>
-              <p class="cert-level">DCA</p>
-              <p class="cert-date">Valid until: Nov 2024</p>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge">
-                <img src="./assets/checkmark.png" alt="Terraform" class="cert-icon" />
-              </div>
-              <h3 class="cert-name">HashiCorp Terraform Associate</h3>
-              <p class="cert-level">003</p>
-              <p class="cert-date">Valid until: Sep 2025</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="cert-category">
-          <h2 class="cert-category-title">Digital Badges</h2>
-          <div class="badges-grid">
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">AWS Cloud Quest: Cloud Practitioner</span>
-            </div>
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">GitHub Actions Certification</span>
-            </div>
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">Jenkins Certified Engineer</span>
-            </div>
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">Ansible Automation Platform</span>
-            </div>
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">SonarQube Quality Gate</span>
-            </div>
-            <div class="badge-item">
-              <div class="badge-icon">
-                <img src="./assets/checkmark.png" alt="Badge" class="badge-img" />
-              </div>
-              <span class="badge-name">Prometheus Monitoring</span>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
     <section id="projects">
@@ -499,55 +412,79 @@
       <h1 class="title">Blog Posts</h1>
       <div class="blog-grid">
         <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge medium">Medium</span>
+          </div>
           <h3 class="blog-title">Getting Started with AWS DevOps</h3>
           <p class="blog-date">December 2023</p>
           <p class="blog-excerpt">A comprehensive guide to setting up your first DevOps pipeline on AWS using modern tools and best practices.</p>
-          <button class="btn blog-btn" onclick="location.href='#'">
-            Read More
+          <button class="btn blog-btn" onclick="window.open('https://medium.com/@raphewkarim', '_blank')">
+            Read on Medium
           </button>
         </div>
         
         <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge devto">Dev.to</span>
+          </div>
           <h3 class="blog-title">Kubernetes Security Best Practices</h3>
           <p class="blog-date">November 2023</p>
           <p class="blog-excerpt">Essential security measures every DevOps engineer should implement when working with Kubernetes clusters.</p>
-          <button class="btn blog-btn" onclick="location.href='#'">
-            Read More
+          <button class="btn blog-btn" onclick="window.open('https://dev.to/raphewkarim', '_blank')">
+            Read on Dev.to
           </button>
         </div>
         
         <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge hashnode">Hashnode</span>
+          </div>
           <h3 class="blog-title">Infrastructure as Code with Terraform</h3>
           <p class="blog-date">October 2023</p>
           <p class="blog-excerpt">Learn how to manage your cloud infrastructure efficiently using Terraform modules and best practices.</p>
-          <button class="btn blog-btn" onclick="location.href='#'">
-            Read More
+          <button class="btn blog-btn" onclick="window.open('https://hashnode.com/@raphewkarim', '_blank')">
+            Read on Hashnode
+          </button>
+        </div>
+        
+        <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge linkedin">LinkedIn</span>
+          </div>
+          <h3 class="blog-title">CI/CD Pipeline Optimization</h3>
+          <p class="blog-date">September 2023</p>
+          <p class="blog-excerpt">Strategies to optimize your CI/CD pipelines for faster deployments and better reliability.</p>
+          <button class="btn blog-btn" onclick="window.open('https://www.linkedin.com/in/raphew-karim/', '_blank')">
+            Read on LinkedIn
+          </button>
+        </div>
+        
+        <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge medium">Medium</span>
+          </div>
+          <h3 class="blog-title">Docker Best Practices for Production</h3>
+          <p class="blog-date">August 2023</p>
+          <p class="blog-excerpt">Production-ready Docker configurations and security practices for enterprise environments.</p>
+          <button class="btn blog-btn" onclick="window.open('https://medium.com/@raphewkarim', '_blank')">
+            Read on Medium
+          </button>
+        </div>
+        
+        <div class="blog-card">
+          <div class="blog-platform">
+            <span class="platform-badge devto">Dev.to</span>
+          </div>
+          <h3 class="blog-title">AWS Cost Optimization Strategies</h3>
+          <p class="blog-date">July 2023</p>
+          <p class="blog-excerpt">Practical approaches to reduce AWS costs while maintaining performance and reliability.</p>
+          <button class="btn blog-btn" onclick="window.open('https://dev.to/raphewkarim', '_blank')">
+            Read on Dev.to
           </button>
         </div>
       </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">raphewkarim@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/raphewkarimissah/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -556,7 +493,6 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>

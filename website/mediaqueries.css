@@ -119,6 +119,13 @@
   .text-container {
     text-align: left;
   }
+  
+  .text-container p {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
 }
 
 @media screen and (max-width: 480px) {
