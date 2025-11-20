@@ -294,6 +294,57 @@ section {
   font-weight: 500;
 }
 
+.qr-section {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-code {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.qr-code:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.qr-with-logo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.qr-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.qr-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: white;
+  object-fit: cover;
+}
+
+.qr-text {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+}
+
 .action-buttons {
   display: flex;
   flex-direction: column;
